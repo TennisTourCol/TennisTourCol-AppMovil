@@ -1,7 +1,10 @@
 package com.tennistourcol;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.tennistourcol.impl.Adaptador;
@@ -11,7 +14,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class TournamentsActivity extends AppCompatActivity {
+public class TournamentActivity extends AppCompatActivity {
 
     private ListView lTournaments;
     private Adaptador adaptador;
@@ -20,11 +23,21 @@ public class TournamentsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tournaments);
+        setContentView(R.layout.activity_tournament);
 
         lTournaments = (ListView) findViewById(R.id.lTournaments);
-        adaptador = new Adaptador(this, getTorneos());
+        listaTorneos = getTorneos();
+        adaptador = new Adaptador(this, listaTorneos);
         lTournaments.setAdapter(adaptador);
+
+        lTournaments.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(TournamentActivity.this, DetalleTorneos.class);
+                intent.putExtra("torneo", listaTorneos.get(position));
+                startActivity(intent);
+            }
+        });
     }
 
     private ArrayList<Tournament> getTorneos(){
