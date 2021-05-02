@@ -45,7 +45,7 @@ public class Adaptador extends BaseAdapter {
         ImageView clubImg = convertView.findViewById(R.id.imgFoto);
         TextView nombreTorneo = convertView.findViewById(R.id.nombreTorneo);
         TextView club = convertView.findViewById(R.id.club);
-        TextView fecha = convertView.findViewById(R.id.fecha);
+        TextView fecha = convertView.findViewById(R.id.direccion);
 
         clubImg.setImageResource(tournament.getFoto());
         nombreTorneo.setText(tournament.getNombre());

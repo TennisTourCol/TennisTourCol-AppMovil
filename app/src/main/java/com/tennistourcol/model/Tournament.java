@@ -4,6 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
 
@@ -13,7 +14,7 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
-public class Tournament {
+public class Tournament implements Serializable {
 
     private String id;
 
