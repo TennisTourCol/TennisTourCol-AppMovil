@@ -9,15 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TennisTourCol">
-<<<<<<< HEAD
-
-        
         <activity android:name=".DetalleTorneos" />
-=======
-        <activity android:name=".Player"></activity>
->>>>>>> master
+        <activity android:name=".TournamentActivity" />
+
         <activity
-            android:name=".TournamentActivity"
+            android:name=".PlayerActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.TennisTourCol.NoActionBar">
             <intent-filter>
