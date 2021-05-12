@@ -36,4 +36,5 @@ public class DetalleTorneos extends AppCompatActivity {
         precio.setText(tournament.getPrecio().toString());
 
     }
+
 }

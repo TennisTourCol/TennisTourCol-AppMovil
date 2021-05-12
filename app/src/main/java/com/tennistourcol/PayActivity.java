@@ -7,15 +7,20 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tennistourcol.databinding.ActivityPayBinding;
+import com.tennistourcol.model.Tournament;
+
+import java.math.BigInteger;
+import java.util.Date;
 
 
 public class PayActivity extends AppCompatActivity {
 
     private ActivityPayBinding binding;
-    String amount;
+    String correo,nombre;
     String name = "Highbrow Director";
     String upiId = "hashimads123@oksbi";
     String transactionNote = "pay test";
@@ -23,24 +28,43 @@ public class PayActivity extends AppCompatActivity {
     Uri uri;
     int GOOGLE_PAY_REQUEST_CODE = 123;
     public static final String GOOGLE_PAY_PACKAGE_NAME = "com.google.android.apps.nbu.paisa.user";
-
+    private Tournament tournament;
+    private TextView nombreTorneo, lugarTorneo, totalAPagar, fechaTorneo, idTorneo, fechaFactura;
+    private Date fechaFacturaCreacion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        fechaFacturaCreacion= new Date();
         super.onCreate(savedInstanceState);
         binding = ActivityPayBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //tournament = (Tournament) getIntent().getSerializableExtra("torneo");
+        tournament = crearTorneo();
+        nombreTorneo = findViewById(R.id.nombreTorneoFactura);
+        lugarTorneo = findViewById(R.id.lugarTorneoFactura);
+        fechaTorneo = findViewById(R.id.fechaInicioTorneoFactura);
+        totalAPagar = findViewById(R.id.totalPagarFactura);
+        idTorneo = findViewById(R.id.idFactura);
+        fechaFactura = findViewById(R.id.fechaFactura);
+
+        nombreTorneo.setText(tournament.getNombre());
+        lugarTorneo.setText(tournament.getClub());
+        fechaTorneo.setText(tournament.getFechaInicio().toString());
+        totalAPagar.setText(tournament.getPrecio().toString());
+        idTorneo.setText("001");
+        fechaFactura.setText(fechaFacturaCreacion.toString());
+
         binding.googlePayButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               amount = binding.amountEditText.getText().toString();
-               amount = binding.amountEditText.getText().toString();
-               if (!amount.isEmpty()) {
-                   uri = getUpiPaymentUri(name, upiId, transactionNote, amount);
+               correo = binding.correoFactura.getText().toString();
+               nombre = binding.nombreFactua.getText().toString();
+               if (!correo.isEmpty() && !nombre.isEmpty()) {
+                   uri = getUpiPaymentUri(name, upiId, transactionNote, "160000");
                    payWithGPay();
                } else {
-                   binding.amountEditText.setError("Amount is required!");
-                   binding.amountEditText.requestFocus();
+                   binding.correoFactura.setError("Correo es requerido!");
+                   binding.nombreFactua.setError("Nombre de la persona es requerido!");
                }
            }
        });
@@ -90,5 +114,23 @@ public class PayActivity extends AppCompatActivity {
         } else {
             Toast.makeText(PayActivity.this, "Transaction Failed", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private Tournament crearTorneo(){
+        Tournament bogotaTorneo = Tournament.builder()
+                .nombre("Torneo prueba")
+                .responsable("Juan")
+                .direccion("Tv 1 #2-3")
+                .ciudad("Bogotá")
+                .club("El Rancho")
+                .grado("4")
+                .categoria("20-22")
+                .precio(BigInteger.valueOf(10000))
+                .hora("12:00")
+                .fechaInicio(new Date())
+                .fechaFin(new Date())
+                .foto(R.drawable.bt)
+                .build();
+        return bogotaTorneo;
     }
 }
