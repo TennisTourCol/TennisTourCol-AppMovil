@@ -22,8 +22,11 @@
     <string name="responsable_torneo">Responsable</string>
     <string name="direccion_torneo">Dirección - Ubicación</string>
     <string name="ciudad_torneo">Ciudad</string>
-    <string name="dificultad_torneo">Dificultad</string>
+    <string name="club_torneo">Club</string>
+    <string name="grado_torneo">Grado</string>
+    <string name="categoria_torneo">Categoria</string>
     <string name="precio_torneo">Precio</string>
+    <string name="hora_torneo">Hora</string>
     <string name="fechainicio_torneo">Fecha de Inicio</string>
     <string name="fechafin_torneo">Fecha Final</string>
 

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -74,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/direcciontorneo" />
 
     <EditText
-        android:id="@+id/dificultad"
+        android:id="@+id/clubTorneo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -83,15 +88,15 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:hint="@string/dificultad_torneo"
+        android:hint="@string/club_torneo"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ciudad" />
 
     <EditText
-        android:id="@+id/preciotorneo"
+        android:id="@+id/gradoTorneo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -100,12 +105,29 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:hint="@string/precio_torneo"
+        android:hint="@string/grado_torneo"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dificultad" />
+        app:layout_constraintTop_toBottomOf="@+id/clubTorneo" />
+
+    <EditText
+        android:id="@+id/categoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="@string/categoria_torneo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradoTorneo" />
 
     <EditText
         android:id="@+id/fechainicio"
@@ -117,15 +139,15 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:clickable="true"
-        android:maxLines="1"
         android:ems="10"
         android:focusable="false"
-        android:inputType="date"
         android:hint="@string/fechainicio_torneo"
+        android:inputType="date"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preciotorneo" />
+        app:layout_constraintTop_toBottomOf="@+id/horaTorneo" />
 
     <EditText
         android:id="@+id/fechafinal"
@@ -137,15 +159,51 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:clickable="true"
-        android:maxLines="1"
         android:ems="10"
         android:focusable="false"
-        android:inputType="date"
         android:hint="@string/fechafin_torneo"
+        android:inputType="date"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fechainicio" />
+
+    <EditText
+        android:id="@+id/preciotorneo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="@string/precio_torneo"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria" />
+
+    <EditText
+        android:id="@+id/horaTorneo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/hora_torneo"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preciotorneo" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/saveTournamentButton"
@@ -160,3 +218,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
+    </ScrollView>
