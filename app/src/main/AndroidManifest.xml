@@ -14,7 +14,7 @@
         <activity android:name=".DetalleTorneos" />
         <activity android:name=".TournamentActivity" />
         <activity
-            android:name=".AllTournamentActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.TennisTourCol.NoActionBar">
             <intent-filter>
