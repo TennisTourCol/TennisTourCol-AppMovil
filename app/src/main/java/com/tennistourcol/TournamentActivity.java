@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.tennistourcol.impl.Adaptador;
 import com.tennistourcol.model.Tournament;
@@ -72,5 +73,12 @@ public class TournamentActivity extends AppCompatActivity {
         listaTorneos.add(bogotaTorneo);
         listaTorneos.add(serrezuela);
         return listaTorneos;
+    }
+
+    public void eliminarTorneo(View view){
+        System.out.println("ENTRE");
+        System.out.println(view.findViewById(R.id.nombreTorneo));
+        System.out.println(lTournaments);
+
     }
 }

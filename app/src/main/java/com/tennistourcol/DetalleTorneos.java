@@ -4,8 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.tennistourcol.model.Tournament;
+
 
 public class DetalleTorneos extends AppCompatActivity {
     private Tournament tournament;
