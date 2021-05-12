@@ -15,4 +15,6 @@
     <string name="UserDescription">User Description</string>
     <string name="LastTorunament">Last Torunamen</string>
     <string name="NetTorunament">Next Torunamen</string>
+
+    <string name="googlepay_button_content_description">Google Pay</string>
 </resources>
