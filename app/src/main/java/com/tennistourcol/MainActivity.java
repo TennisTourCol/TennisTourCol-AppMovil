@@ -1,6 +1,5 @@
 package com.tennistourcol;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -17,25 +16,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.tennistourcol.model.Player;
-import com.tennistourcol.model.Tournament;
-
-
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private Player tempJugador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        tempJugador = crearJugador();
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -43,10 +30,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, TournamentActivity.class);
-//                intent.putExtra("jugador", (Serializable) tempJugador);
-                startActivity(intent);
-
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -60,55 +45,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-    }
-
-    private Player crearJugador() {
-        List<Tournament> schedule = new ArrayList<>();
-        Tournament bogotaTorneo = Tournament.builder()
-                .nombre("Torneo prueba")
-                .responsable("Juan")
-                .direccion("Tv 1 #2-3")
-                .ciudad("Bogotá")
-                .club("El club de prueba")
-                .grado("4")
-                .categoria("20-22")
-                .precio(BigInteger.valueOf(10000))
-                .hora("12:00")
-                .fechaInicio(new Date())
-                .fechaFin(new Date())
-                .foto(R.drawable.bt)
-                .build();
-        Tournament serrezuela = Tournament.builder()
-                .nombre("Cosat Bogota Tenis")
-                .responsable("Juan")
-                .direccion("Tv 1 #2-3")
-                .ciudad("Bogotá")
-                .club("El club de prueba")
-                .grado("2")
-                .categoria("20-22")
-                .precio(BigInteger.valueOf(10000))
-                .hora("12:00")
-                .fechaInicio(new Date())
-                .fechaFin(new Date())
-                .foto(R.drawable.serrezuela)
-                .build();
-        schedule.add(bogotaTorneo);
-        schedule.add(serrezuela);
-
-        Player temp = Player.builder()
-                .id("1")
-                .name("player prueba")
-                .mail("prueba@gmail.com")
-                .apodo("prueeba")
-                .liga("Bogota")
-                .ciudad("Bogota")
-                .description("nada")
-                .puntos("0")
-                .schedule(schedule)
-                .build();
-
-        return temp;
     }
 
     @Override
