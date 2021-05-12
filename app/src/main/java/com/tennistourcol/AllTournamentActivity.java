@@ -33,7 +33,7 @@ public class AllTournamentActivity extends AppCompatActivity {
         lTournaments.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(AllTournamentActivity.this, DetalleTorneos.class);
+                Intent intent = new Intent(AllTournamentActivity.this, InfoAllTournamentActivity.class);
                 intent.putExtra("torneo", listaTorneos.get(position));
                 startActivity(intent);
             }
