@@ -116,7 +116,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:maxLines="1"
         android:ems="10"
+        android:focusable="false"
         android:inputType="date"
         android:text="@string/fechainicio_torneo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +136,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:maxLines="1"
         android:ems="10"
+        android:focusable="false"
         android:inputType="date"
         android:text="@string/fechafin_torneo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fechainicio" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/saveTournamentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
