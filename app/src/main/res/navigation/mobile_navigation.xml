@@ -28,4 +28,9 @@
         android:name="com.tennistourcol.ui.tournament.TournamentFragment"
         android:label="@string/menu_create_tournament"
         tools:layout="@layout/tournament_fragment" />
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.tennistourcol.ui.match.MatchFragment"
+        android:label="@string/menu_match"
+        tools:layout="@layout/fragment_match" />
 </navigation>
