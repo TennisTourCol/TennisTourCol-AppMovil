@@ -41,4 +41,15 @@
     <string name="fecha_partidostr">Fecha</string>
     <string name="hora_partidostr">Hora</string>
 
+    <!--  Login -->
+    <string name="loginMail">Correo</string>
+    <string name="loginPassword">Contraseña</string>
+    <string name="loginButton">Iniciar Sesión</string>
+    <!--  Registrar Usuario -->
+    <string name="registerMail">Correo</string>
+    <string name="registerName">Nombre</string>
+    <string name="registerPassword">Contraseña</string>
+    <string name="registerButton">Registrate</string>
+
+
 </resources>
