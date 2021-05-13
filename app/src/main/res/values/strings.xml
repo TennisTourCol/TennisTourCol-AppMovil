@@ -11,6 +11,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_create_tournament">Crear Torneo</string>
+    <string name="menu_match">Modificar Cuadros</string>
 
     <string name="UserName">UserName</string>
     <string name="UserDescription">User Description</string>
@@ -32,5 +33,12 @@
     <string name="hora_torneo">Hora</string>
     <string name="fechainicio_torneo">Fecha de Inicio</string>
     <string name="fechafin_torneo">Fecha Final</string>
+
+    <!-- Formulario Partido -->
+    <string name="jugador_localstr">Jugador Local</string>
+    <string name="jugador_visitantestr">Jugador Visitante</string>
+    <string name="numero_canchastr">Número de Cancha</string>
+    <string name="fecha_partidostr">Fecha</string>
+    <string name="hora_partidostr">Hora</string>
 
 </resources>
