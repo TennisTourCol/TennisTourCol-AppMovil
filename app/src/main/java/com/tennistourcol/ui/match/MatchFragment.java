@@ -3,6 +3,7 @@ package com.tennistourcol.ui.match;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +14,17 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.tennistourcol.R;
+import com.tennistourcol.model.Match;
+import com.tennistourcol.service.MatchService;
 
+import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -38,6 +48,8 @@ public class MatchFragment extends Fragment {
     private final int ano = calendar.get(Calendar.YEAR);
     private final int horaC = calendar.get(Calendar.HOUR_OF_DAY);
     private final int minutoC = calendar.get(Calendar.MINUTE);
+
+    private MatchService matchService;
 
     public static MatchFragment newInstance() {
         MatchFragment fragment = new MatchFragment();
@@ -73,6 +85,13 @@ public class MatchFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 obtenerHora();
+            }
+        });
+
+        ((FloatingActionButton) view.findViewById(R.id.saveMatchButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validaCampos(view);
             }
         });
 
@@ -120,5 +139,43 @@ public class MatchFragment extends Fragment {
         }, horaC, minutoC, false);
 
         recogerHora.show();
+    }
+
+    private void validaCampos(View view){;
+        if(jugadorLocal.getText().toString().equals("")){
+            jugadorLocal.setError("Ingrese el nombre del jugador");
+        } else if (jugadorVisitante.getText().toString().equals("")){
+            jugadorVisitante.setError("Ingrese el nombre del jugador");
+        } else if (numeroCancha.getText().toString().equals("")){
+            numeroCancha.setError("Ingrese el número de cancha");
+        } else if (fechaPartido.getText().toString().equals("")){
+            fechaPartido.setError("Ingrese la fecha del partido");
+        } else if (horaPartido.getText().toString().equals("")){
+            horaPartido.setError("Ingrese la hora del partido");
+        } else {
+            //TODO
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("https://ieti-back.herokuapp.com/") //localhost for emulator
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            matchService = retrofit.create(MatchService.class);
+            SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+            Date fechaP = new Date();
+            try {
+                fechaP = format.parse(fechaPartido.getText().toString());
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            Match match = Match.builder()
+                    .player1(jugadorLocal.getText().toString())
+                    .player2(jugadorVisitante.getText().toString())
+                    .court(numeroCancha.getText().toString())
+                    .date(fechaP)
+                    .hour(horaPartido.getText().toString())
+                    .build();
+            System.out.println(match);
+//            saveMatch(match);
+        }
     }
 }

@@ -1,5 +1,7 @@
 package com.tennistourcol.model;
 
+import java.util.Date;
+
 import lombok.*;
 
 @Builder
@@ -14,5 +16,7 @@ public class Match {
     private String player1;
     private String player2;
     private String court;
+    private Date date;
+    private String hour;
     private String round;
 }
