@@ -22,4 +22,10 @@
         android:name="com.tennistourcol.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/createTournamentFragment"
+        android:name="com.tennistourcol.ui.tournament.TournamentFragment"
+        android:label="@string/menu_create_tournament"
+        tools:layout="@layout/tournament_fragment" />
 </navigation>

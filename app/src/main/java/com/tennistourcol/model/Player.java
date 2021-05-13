@@ -4,6 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import lombok.*;
 import java.util.List;
+import com.tennistourcol.model.Tournament;
 
 @Builder
 @NoArgsConstructor
@@ -20,7 +21,7 @@ public class Player {
     private String name, mail, apodo, liga, ciudad, description;
     private String puntos;
 
-    private List<String> schedule;
+    private List<Tournament> schedule;
 
     private Integer imagen;
 }
