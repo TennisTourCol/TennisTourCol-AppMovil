@@ -17,6 +17,9 @@
     <string name="LastTorunament">Last Torunamen</string>
     <string name="NetTorunament">Next Torunamen</string>
 
+
+    <string name="googlepay_button_content_description">Google Pay</string>
+
     <!--  Formulario Crear Torneo  -->
     <string name="nombre_torneo">Nombre Torneo</string>
     <string name="responsable_torneo">Responsable</string>
