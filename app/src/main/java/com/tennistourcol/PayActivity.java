@@ -39,7 +39,7 @@ public class PayActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //tournament = (Tournament) getIntent().getSerializableExtra("torneo");
-        tournament = crearTorneo();
+        tournament= (Tournament) getIntent().getSerializableExtra("torneo");
         nombreTorneo = findViewById(R.id.nombreTorneoFactura);
         lugarTorneo = findViewById(R.id.lugarTorneoFactura);
         fechaTorneo = findViewById(R.id.fechaInicioTorneoFactura);
@@ -116,21 +116,5 @@ public class PayActivity extends AppCompatActivity {
         }
     }
 
-    private Tournament crearTorneo(){
-        Tournament bogotaTorneo = Tournament.builder()
-                .nombre("Torneo prueba")
-                .responsable("Juan")
-                .direccion("Tv 1 #2-3")
-                .ciudad("Bogotá")
-                .club("El Rancho")
-                .grado("4")
-                .categoria("20-22")
-                .precio(BigInteger.valueOf(10000))
-                .hora("12:00")
-                .fechaInicio(new Date())
-                .fechaFin(new Date())
-                .foto(R.drawable.bt)
-                .build();
-        return bogotaTorneo;
-    }
+
 }
