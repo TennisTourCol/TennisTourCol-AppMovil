@@ -1,6 +1,7 @@
 package com.tennistourcol.ui.User;
 
 import android.arch.lifecycle.ViewModelProvider;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,19 +9,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.tennistourcol.DetalleTorneos;
-import com.tennistourcol.PlayerActivity;
 import com.tennistourcol.R;
 import com.tennistourcol.impl.Adaptador;
 import com.tennistourcol.model.Player;
 import com.tennistourcol.model.Tournament;
 import com.tennistourcol.service.UserService;
-import com.tennistourcol.ui.tournament.TournamentViewModel;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -34,23 +32,23 @@ public class UserFragment extends Fragment {
         return new UserFragment();
     }
 
+    private Button editUserButton;
     private UserViewModel userViewModel;
     private UserService userService;
-
-
     private ListView lTournaments;
     private Player jugadorPrueba;
     private TextView name, description, apodo, liga, puntos, ciudad;
     private ImageView imgPerfil;
     private Adaptador adaptador;
     private ArrayList<Tournament> listaTorneos = new ArrayList<>();
-
+    private Context context;
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, @NotNull Bundle savedInstanceState) {
         jugadorPrueba = createPlayer();
         listaTorneos = getTorneos();
         View view =inflater.inflate(R.layout.fragment_user, container, false);
 
+        context=container.getContext();
         name=view.findViewById(R.id.namePerfil2);
         imgPerfil = view.findViewById(R.id.imgPerfil2);
         description = view.findViewById(R.id.descriptionPerfil2);

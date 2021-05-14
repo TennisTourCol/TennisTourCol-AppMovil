@@ -43,4 +43,17 @@
         android:name="com.tennistourcol.ui.User.UserFragment"
         android:label="User"
         tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.tennistourcol.ui.ranking.RankingFragment"
+        android:label="Ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/editInfoFragment"
+        android:name="com.tennistourcol.ui.User.EditInfoFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/fragment_edit_info" />
+
+
+
 </navigation>

@@ -18,8 +18,8 @@
             android:layout_width="410dp"
             android:layout_height="158dp"
             android:background="@android:color/holo_red_light"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="1dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/namePerfil2"
@@ -44,6 +44,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+        <Button
+            android:id="@+id/editInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Editar Info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView22"
@@ -143,8 +153,8 @@
             android:layout_height="133dp"
             android:layout_marginTop="108dp"
             android:background="@drawable/googlepay_button_background_image_pressed"
-            app:layout_constraintTop_toBottomOf="@+id/imgPerfil2"
-            tools:layout_editor_absoluteX="0dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerfil2">
 
             <TextView
                 android:id="@+id/descriptionPerfil2"
@@ -161,10 +171,12 @@
             android:id="@+id/textView31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="8dp"
             android:text="TORNEOS JUGADOS"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
-            tools:layout_editor_absoluteX="141dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="411dp"
@@ -172,8 +184,8 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/googlepay_button_background_image_pressed"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31"
-            tools:layout_editor_absoluteX="0dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31">
 
             <ListView
                 android:id="@+id/lTorneos2"
@@ -185,15 +197,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
 
-        <Button
-            android:id="@+id/editPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="184dp"
-            android:text="Editar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgPerfil2"
-            app:layout_constraintTop_toTopOf="parent" />
+
+
     </android.support.constraint.ConstraintLayout>
 
 
