@@ -63,5 +63,9 @@
     <string name="FechaInicioTorneoEdit">Fecha de Inicio</string>
     <string name="FechaFinTorneoEdit">Fecha de Finalizacion</string>
 
+    <!-- Home View -->
+    <string name="titulo_home">Próximos Encuentros</string>
+    <string name="text_vs"> VS </string>
+
 
 </resources>
