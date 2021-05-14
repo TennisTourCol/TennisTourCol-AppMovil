@@ -26,6 +26,10 @@
             android:id="@+id/matchFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_match" />
+        <item
+            android:id="@+id/Mistorneos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mis Torneos" />
 
     </group>
 </menu>

@@ -33,4 +33,8 @@
         android:name="com.tennistourcol.ui.match.MatchFragment"
         android:label="@string/menu_match"
         tools:layout="@layout/fragment_match" />
+    <fragment
+        android:id="@+id/Mistorneos"
+        android:name="com.tennistourcol.ui.ListTournament.TournamentActivityFragment"
+        android:label="TournamentActivityFragment" />
 </navigation>
