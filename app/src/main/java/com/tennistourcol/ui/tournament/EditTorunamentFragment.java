@@ -1,12 +1,23 @@
 package com.tennistourcol.ui.tournament;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.tennistourcol.R;
+import com.tennistourcol.model.Response;
+import com.tennistourcol.model.Tournament;
+import com.tennistourcol.service.TournamentService;
+
+import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +30,8 @@ public class EditTorunamentFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private TournamentService tournamentService;
+    private final ExecutorService executorService = Executors.newFixedThreadPool( 1 );
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -58,7 +71,37 @@ public class EditTorunamentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_edit_torunament, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_torunament, container, false);
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://ieti-back.herokuapp.com/") //localhost for emulator
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        tournamentService = retrofit.create(TournamentService.class);
+        ((FloatingActionButton) view.findViewById(R.id.deleteTournamentButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                deleteTournament(Tournament.builder().id("1").build());
+                System.out.println("ELIMINAR-----------------");
+            }
+        });
+
+        return view;
+    }
+
+    private void deleteTournament(Tournament tournament) {
+        executorService.execute(new Runnable()
+        {
+            @Override
+            public void run() {
+                retrofit2.Response<Response> response = null;
+                try {
+                    response = tournamentService.deleteTournament(tournament).execute();
+                    System.out.println("res " + response.toString());
+                    com.tennistourcol.model.Response tournamentResponse = response.body();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }});
     }
 }
