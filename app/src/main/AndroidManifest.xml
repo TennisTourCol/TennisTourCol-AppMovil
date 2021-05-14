@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TennisTourCol">
-        <activity android:name=".InfoAllTournamentActivity"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".GruposTorneos"></activity>
+        <activity android:name=".InfoAllTournamentActivity" />
+        <activity android:name=".AllTournamentActivity" />
         <activity android:name=".DetalleTorneos" />
         <activity android:name=".TournamentActivity" />
         <activity
