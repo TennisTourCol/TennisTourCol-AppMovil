@@ -62,6 +62,16 @@
     <string name="horaTorneoEdit">Hora</string>
     <string name="FechaInicioTorneoEdit">Fecha de Inicio</string>
     <string name="FechaFinTorneoEdit">Fecha de Finalizacion</string>
+    <string name="userName">User Name</string>
+    <string name="emailUser">Email</string>
+    <string name="userApodo">Apodo</string>
+    <string name="userContraseña">Contraseña</string>
+    <string name="userContraseña2">Confirmacion Contraseña</string>
+    <string name="userLiga">Liga</string>
+    <string name="userDescription">Descripcion</string>
+    <string name="userCiudad">Ciudad</string>
+    <string name="userDescripcion">Descripcion</string>
+    <string name="saveButton">Guardar Información</string>
 
 
 </resources>

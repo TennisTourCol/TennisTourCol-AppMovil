@@ -7,10 +7,8 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
     <android.support.constraint.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.tournament.EditTorunamentFragment">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/userName"
@@ -18,7 +16,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="40dp"
             android:ems="10"
-            android:hint="@string/NombreTorneoEdit"
+            android:hint="@string/UserName"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +28,7 @@
             android:layout_height="49dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/DireccionTorneoEdit"
+            android:hint="@string/emailUser"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.516"
@@ -43,8 +41,8 @@
             android:layout_height="45dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/ClubTorneoEdit"
-            android:inputType="textPersonName"
+            android:hint="@string/userApodo"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.629"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +54,7 @@
             android:layout_height="45dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/GradoTorneoEdit"
+            android:hint="@string/userContraseña"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.551"
@@ -69,8 +67,8 @@
             android:layout_height="47dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/CategoriaTorneoEdit"
-            android:inputType="textPersonName"
+            android:hint="@string/userContraseña2"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,8 +80,8 @@
             android:layout_height="47dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/CostoTorneoEdit"
-            android:inputType="numberDecimal"
+            android:hint="@string/userLiga"
+            android:inputType="textNoSuggestions"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,8 +93,8 @@
             android:layout_height="45dp"
             android:layout_marginTop="28dp"
             android:ems="10"
-            android:hint="@string/horaTorneoEdit"
-            android:inputType="time"
+            android:hint="@string/userCiudad"
+            android:inputType="textNoSuggestions"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.548"
             app:layout_constraintStart_toStartOf="parent"
@@ -104,55 +102,31 @@
 
         <EditText
             android:id="@+id/descripcionUser"
-            android:layout_width="379dp"
-            android:layout_height="43dp"
+            android:layout_width="378dp"
+            android:layout_height="108dp"
             android:layout_marginTop="28dp"
             android:clickable="true"
             android:ems="10"
-            android:hint="@string/FechaInicioTorneoEdit"
-            android:inputType="date"
+            android:hint="@string/userDescripcion"
+            android:inputType="textImeMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.593"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userCiudad" />
 
-        <EditText
-            android:id="@+id/fechaFinTorneoEdit"
-            android:layout_width="371dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="28dp"
-            android:ems="10"
-            android:hint="@string/FechaFinTorneoEdit"
-            android:inputType="date"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descripcionUser" />
-
         <Button
-            android:id="@+id/button"
-            android:layout_width="111dp"
-            android:layout_height="37dp"
-            android:layout_marginTop="8dp"
-            android:text="GUARDAR"
+            android:id="@+id/buttonSave"
+            android:layout_width="162dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/saveButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.196"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fechaFinTorneoEdit"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/deleteTournamentButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="4dp"
-            android:clickable="true"
-            app:backgroundTint="@android:color/holo_red_dark"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
 
     </android.support.constraint.ConstraintLayout>
+
+
+
 </ScrollView>

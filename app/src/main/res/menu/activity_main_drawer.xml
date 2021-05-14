@@ -35,6 +35,15 @@
             android:id="@+id/userFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Usuario" />
+        <item
+            android:id="@+id/rankingFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Rankings" />
+        <item
+            android:id="@+id/editInfoFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Editar Información" />
+
     </group>
 </menu>
 
