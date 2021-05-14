@@ -11,11 +11,15 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_create_tournament">Crear Torneo</string>
+    <string name="menu_match">Modificar Cuadros</string>
 
     <string name="UserName">UserName</string>
     <string name="UserDescription">User Description</string>
     <string name="LastTorunament">Last Torunamen</string>
     <string name="NetTorunament">Next Torunamen</string>
+
+
+    <string name="googlepay_button_content_description">Google Pay</string>
 
     <!--  Formulario Crear Torneo  -->
     <string name="nombre_torneo">Nombre Torneo</string>
@@ -29,5 +33,35 @@
     <string name="hora_torneo">Hora</string>
     <string name="fechainicio_torneo">Fecha de Inicio</string>
     <string name="fechafin_torneo">Fecha Final</string>
+
+    <!-- Formulario Partido -->
+    <string name="jugador_localstr">Jugador Local</string>
+    <string name="jugador_visitantestr">Jugador Visitante</string>
+    <string name="numero_canchastr">Número de Cancha</string>
+    <string name="fecha_partidostr">Fecha</string>
+    <string name="hora_partidostr">Hora</string>
+
+    <!--  Login -->
+    <string name="loginMail">Correo</string>
+    <string name="loginPassword">Contraseña</string>
+    <string name="loginButton">Iniciar Sesión</string>
+    <!--  Registrar Usuario -->
+    <string name="registerMail">Correo</string>
+    <string name="registerName">Nombre</string>
+    <string name="registerPassword">Contraseña</string>
+    <string name="registerButton">Registrate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NombreTorneoEdit">Nombre</string>
+    <string name="DireccionTorneoEdit">Direccion</string>
+    <string name="ClubTorneoEdit">Club</string>
+    <string name="GradoTorneoEdit">Grado</string>
+    <string name="CategoriaTorneoEdit">Categoria</string>
+    <string name="precioTorneoEdit">Precio</string>
+    <string name="CostoTorneoEdit">Costo</string>
+    <string name="horaTorneoEdit">Hora</string>
+    <string name="FechaInicioTorneoEdit">Fecha de Inicio</string>
+    <string name="FechaFinTorneoEdit">Fecha de Finalizacion</string>
+
 
 </resources>

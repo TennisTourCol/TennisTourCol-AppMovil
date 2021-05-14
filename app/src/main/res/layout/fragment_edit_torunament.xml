@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tournament.EditTorunamentFragment">
+
+
+        <EditText
+            android:id="@+id/nombreTorneoEdit"
+            android:layout_width="382dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/NombreTorneoEdit"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/direccionTorneoEdit"
+            android:layout_width="380dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/DireccionTorneoEdit"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombreTorneoEdit" />
+
+        <EditText
+            android:id="@+id/clubTorneoEdit"
+            android:layout_width="384dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/ClubTorneoEdit"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/direccionTorneoEdit" />
+
+        <EditText
+            android:id="@+id/gradoTorneoEdit"
+            android:layout_width="382dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/GradoTorneoEdit"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clubTorneoEdit" />
+
+        <EditText
+            android:id="@+id/categoriaTorneoEdit"
+            android:layout_width="381dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/CategoriaTorneoEdit"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gradoTorneoEdit" />
+
+        <EditText
+            android:id="@+id/costoTorneoEdit"
+            android:layout_width="380dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/CostoTorneoEdit"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoriaTorneoEdit" />
+
+        <EditText
+            android:id="@+id/horaTorneoEdit"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/horaTorneoEdit"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/costoTorneoEdit" />
+
+        <EditText
+            android:id="@+id/fehcaInicioTorneoEdit"
+            android:layout_width="379dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:ems="10"
+            android:hint="@string/FechaInicioTorneoEdit"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horaTorneoEdit" />
+
+        <EditText
+            android:id="@+id/fechaFinTorneoEdit"
+            android:layout_width="371dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/FechaFinTorneoEdit"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fehcaInicioTorneoEdit" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="111dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:text="GUARDAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fechaFinTorneoEdit"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/deleteTournamentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            app:backgroundTint="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
