@@ -73,5 +73,9 @@
     <string name="userDescripcion">Descripcion</string>
     <string name="saveButton">Guardar Información</string>
 
+    <!-- Home View -->
+    <string name="titulo_home">Próximos Encuentros</string>
+    <string name="text_vs"> VS </string>
+
 
 </resources>
