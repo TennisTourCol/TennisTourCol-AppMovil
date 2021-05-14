@@ -50,6 +50,18 @@
     <string name="registerName">Nombre</string>
     <string name="registerPassword">Contraseña</string>
     <string name="registerButton">Registrate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NombreTorneoEdit">Nombre</string>
+    <string name="DireccionTorneoEdit">Direccion</string>
+    <string name="ClubTorneoEdit">Club</string>
+    <string name="GradoTorneoEdit">Grado</string>
+    <string name="CategoriaTorneoEdit">Categoria</string>
+    <string name="precioTorneoEdit">Precio</string>
+    <string name="CostoTorneoEdit">Costo</string>
+    <string name="horaTorneoEdit">Hora</string>
+    <string name="FechaInicioTorneoEdit">Fecha de Inicio</string>
+    <string name="FechaFinTorneoEdit">Fecha de Finalizacion</string>
 
 
 </resources>
