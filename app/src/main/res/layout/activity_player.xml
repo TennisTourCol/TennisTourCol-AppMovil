@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/namePerfil"
+            android:id="@+id/namePerfil2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="USUARIO"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.471">
 
         <TextView
-            android:id="@+id/descriptionPerfil"
+            android:id="@+id/descriptionPerfil2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoText="false"
@@ -71,7 +71,7 @@
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
-        android:id="@+id/apodoPlayer"
+        android:id="@+id/apodoPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -83,31 +83,31 @@
         app:layout_constraintVertical_bias="0.358" />
 
     <TextView
-        android:id="@+id/cityPlayer"
+        android:id="@+id/cityPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/apodoPlayer"
+        app:layout_constraintStart_toEndOf="@+id/apodoPlayer2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
 
     <TextView
-        android:id="@+id/ligaPlayer"
+        android:id="@+id/ligaPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cityPlayer"
+        app:layout_constraintStart_toEndOf="@+id/cityPlayer2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
 
     <TextView
-        android:id="@+id/puntosPlayer"
+        android:id="@+id/puntosPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
@@ -116,7 +116,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/ligaPlayer"
+        app:layout_constraintStart_toEndOf="@+id/ligaPlayer2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
 
@@ -128,7 +128,7 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="200dp"
         android:text="APODO"
-        app:layout_constraintBottom_toTopOf="@+id/apodoPlayer"
+        app:layout_constraintBottom_toTopOf="@+id/apodoPlayer2"
         app:layout_constraintEnd_toStartOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +142,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
         android:text="CIUDAD"
-        app:layout_constraintBottom_toTopOf="@+id/cityPlayer"
+        app:layout_constraintBottom_toTopOf="@+id/cityPlayer2"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.932" />
@@ -154,7 +154,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:text="LIGA"
-        app:layout_constraintBottom_toTopOf="@+id/ligaPlayer"
+        app:layout_constraintBottom_toTopOf="@+id/ligaPlayer2"
         app:layout_constraintEnd_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.932" />
@@ -165,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
         android:text="PUNTAJE"
-        app:layout_constraintBottom_toTopOf="@+id/puntosPlayer"
+        app:layout_constraintBottom_toTopOf="@+id/puntosPlayer2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"

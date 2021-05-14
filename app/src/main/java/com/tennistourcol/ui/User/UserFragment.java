@@ -1,43 +1,64 @@
-package com.tennistourcol;
+package com.tennistourcol.ui.User;
 
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.tennistourcol.DetalleTorneos;
+import com.tennistourcol.PlayerActivity;
+import com.tennistourcol.R;
 import com.tennistourcol.impl.Adaptador;
 import com.tennistourcol.model.Player;
 import com.tennistourcol.model.Tournament;
+import com.tennistourcol.service.UserService;
+import com.tennistourcol.ui.tournament.TournamentViewModel;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class PlayerActivity extends AppCompatActivity {
+public class UserFragment extends Fragment {
+
+    public static UserFragment UserFragment() {
+        return new UserFragment();
+    }
+
+    private UserViewModel userViewModel;
+    private UserService userService;
+
+
     private ListView lTournaments;
     private Player jugadorPrueba;
     private TextView name, description, apodo, liga, puntos, ciudad;
     private ImageView imgPerfil;
     private Adaptador adaptador;
     private ArrayList<Tournament> listaTorneos = new ArrayList<>();
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, @NotNull Bundle savedInstanceState) {
         jugadorPrueba = createPlayer();
         listaTorneos = getTorneos();
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player);
+        View view =inflater.inflate(R.layout.fragment_user, container, false);
 
-        name=findViewById(R.id.namePerfil2);
-        imgPerfil = findViewById(R.id.imagenPerfil);
-        description = findViewById(R.id.descriptionPerfil2);
-        ciudad = findViewById(R.id.cityPlayer2);
-        apodo = findViewById(R.id.apodoPlayer2);
-        puntos = findViewById(R.id.puntosPlayer2);
-        liga=findViewById(R.id.ligaPlayer2);
+        name=view.findViewById(R.id.namePerfil2);
+        imgPerfil = view.findViewById(R.id.imgPerfil2);
+        description = view.findViewById(R.id.descriptionPerfil2);
+        ciudad = view.findViewById(R.id.cityPlayer2);
+        apodo = view.findViewById(R.id.apodoPlayer2);
+        puntos = view.findViewById(R.id.puntosPlayer2);
+        liga=view.findViewById(R.id.ligaPlayer2);
+
 
         name.setText(jugadorPrueba.getName());
         imgPerfil.setImageResource(jugadorPrueba.getImagen());
@@ -46,19 +67,19 @@ public class PlayerActivity extends AppCompatActivity {
         apodo.setText(jugadorPrueba.getApodo());
         liga.setText(jugadorPrueba.getLiga());
         puntos.setText(jugadorPrueba.getPuntos());
-        lTournaments = (ListView) findViewById(R.id.lTournaments);
-        adaptador = new Adaptador(this, listaTorneos);
-            lTournaments.setAdapter(adaptador);
 
-            lTournaments.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(PlayerActivity.this, DetalleTorneos.class);
-                intent.putExtra("torneo", listaTorneos.get(position));
-                startActivity(intent);
-            }
-        });
-}
+        lTournaments = (ListView) view.findViewById(R.id.lTorneos2);
+        return view;
+    }
+
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        userViewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(UserViewModel.class);
+
+        // TODO: Use the ViewModel
+    }
     private Player createPlayer(){
         Player player = Player.builder()
                 .id("1")
@@ -108,4 +129,3 @@ public class PlayerActivity extends AppCompatActivity {
     }
 
 }
-
