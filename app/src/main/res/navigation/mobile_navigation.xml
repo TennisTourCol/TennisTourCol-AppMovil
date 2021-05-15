@@ -20,8 +20,12 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.tennistourcol.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Estadisticas"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/tournamentActivityFragment"
+        android:name="com.tennistourcol.ui.MiTournaments.TournamentActivityFragment"
+        android:label="Mis torneos" />
 
     <fragment
         android:id="@+id/createTournamentFragment"
@@ -39,24 +43,22 @@
         android:label="Modificar Torneo"
         tools:layout="@layout/fragment_edit_torunament" />
     <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.tennistourcol.ui.Ranking.RankingFragment"
+        android:label="Ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
         android:id="@+id/userFragment"
         android:name="com.tennistourcol.ui.User.UserFragment"
         android:label="User"
         tools:layout="@layout/fragment_user" />
-    <fragment
-        android:id="@+id/rankingFragment"
-        android:name="com.tennistourcol.ui.ranking.RankingFragment"
-        android:label="Ranking"
-        tools:layout="@layout/fragment_ranking" />
+
     <fragment
         android:id="@+id/editInfoFragment"
         android:name="com.tennistourcol.ui.User.EditInfoFragment"
         android:label="Editar Perfil"
         tools:layout="@layout/fragment_edit_info" />
-    <fragment
-        android:id="@+id/tournamentActivityFragment"
-        android:name="com.tennistourcol.ui.MiTournaments.TournamentActivityFragment"
-        android:label="Mis torneos" />
+
 
 
 </navigation>
