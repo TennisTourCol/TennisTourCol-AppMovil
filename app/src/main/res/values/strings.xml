@@ -2,17 +2,80 @@
     <string name="app_name">TennisTourCol</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Tennis Tour Col</string>
+    <string name="nav_header_subtitle">support@tenistourcol.co</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_create_tournament">Crear Torneo</string>
+    <string name="menu_match">Modificar Cuadros</string>
 
     <string name="UserName">UserName</string>
     <string name="UserDescription">User Description</string>
     <string name="LastTorunament">Last Torunamen</string>
     <string name="NetTorunament">Next Torunamen</string>
+
+
+    <string name="googlepay_button_content_description">Google Pay</string>
+
+    <!--  Formulario Crear Torneo  -->
+    <string name="nombre_torneo">Nombre Torneo</string>
+    <string name="responsable_torneo">Responsable</string>
+    <string name="direccion_torneo">Dirección - Ubicación</string>
+    <string name="ciudad_torneo">Ciudad</string>
+    <string name="club_torneo">Club</string>
+    <string name="grado_torneo">Grado</string>
+    <string name="categoria_torneo">Categoria</string>
+    <string name="precio_torneo">Precio</string>
+    <string name="hora_torneo">Hora</string>
+    <string name="fechainicio_torneo">Fecha de Inicio</string>
+    <string name="fechafin_torneo">Fecha Final</string>
+
+    <!-- Formulario Partido -->
+    <string name="jugador_localstr">Jugador Local</string>
+    <string name="jugador_visitantestr">Jugador Visitante</string>
+    <string name="numero_canchastr">Número de Cancha</string>
+    <string name="fecha_partidostr">Fecha</string>
+    <string name="hora_partidostr">Hora</string>
+
+    <!--  Login -->
+    <string name="loginMail">Correo</string>
+    <string name="loginPassword">Contraseña</string>
+    <string name="loginButton">Iniciar Sesión</string>
+    <!--  Registrar Usuario -->
+    <string name="registerMail">Correo</string>
+    <string name="registerName">Nombre</string>
+    <string name="registerPassword">Contraseña</string>
+    <string name="registerButton">Registrate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NombreTorneoEdit">Nombre</string>
+    <string name="DireccionTorneoEdit">Direccion</string>
+    <string name="ClubTorneoEdit">Club</string>
+    <string name="GradoTorneoEdit">Grado</string>
+    <string name="CategoriaTorneoEdit">Categoria</string>
+    <string name="precioTorneoEdit">Precio</string>
+    <string name="CostoTorneoEdit">Costo</string>
+    <string name="horaTorneoEdit">Hora</string>
+    <string name="FechaInicioTorneoEdit">Fecha de Inicio</string>
+    <string name="FechaFinTorneoEdit">Fecha de Finalizacion</string>
+    <string name="userName">User Name</string>
+    <string name="emailUser">Email</string>
+    <string name="userApodo">Apodo</string>
+    <string name="userContraseña">Contraseña</string>
+    <string name="userContraseña2">Confirmacion Contraseña</string>
+    <string name="userLiga">Liga</string>
+    <string name="userDescription">Descripcion</string>
+    <string name="userCiudad">Ciudad</string>
+    <string name="userDescripcion">Descripcion</string>
+    <string name="saveButton">Guardar Información</string>
+
+    <!-- Home View -->
+    <string name="titulo_home">Próximos Encuentros</string>
+    <string name="text_vs"> VS </string>
+
+
 </resources>

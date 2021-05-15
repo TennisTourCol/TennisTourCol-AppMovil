@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalleTorneos">
+    android:fillViewport="true">
+ <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetalleTorneos">
 
     <TextView
         android:id="@+id/tituloDescrip"
@@ -34,7 +39,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/namePerfil"
+        app:layout_constraintStart_toEndOf="@+id/namePerfil2"
         app:layout_constraintTop_toBottomOf="@+id/imgDescrip"
         tools:ignore="MissingConstraints" />
 
@@ -45,7 +50,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/descriptionPerfil"
+        app:layout_constraintStart_toEndOf="@+id/descriptionPerfil2"
         app:layout_constraintTop_toBottomOf="@+id/descrip"
         tools:ignore="MissingConstraints" />
 
@@ -94,7 +99,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/namePerfil"
+        android:id="@+id/namePerfil2"
         android:layout_width="71dp"
         android:layout_height="18dp"
         android:layout_marginStart="30dp"
@@ -105,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgDescrip" />
 
     <TextView
-        android:id="@+id/descriptionPerfil"
+        android:id="@+id/descriptionPerfil2"
         android:layout_width="71dp"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -113,7 +118,7 @@
         android:layout_marginTop="30dp"
         android:text="Direccion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namePerfil" />
+        app:layout_constraintTop_toBottomOf="@+id/namePerfil2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -124,7 +129,7 @@
         android:layout_marginTop="30dp"
         android:text="Fecha"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionPerfil" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionPerfil2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -159,4 +164,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+    <Button
+        android:id="@+id/pagar"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="44dp"
+        android:text="pagar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+  
+  <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="verCuadros"
+        android:text="Cuadros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio" />
+
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -24,7 +24,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/club"
+        android:id="@+id/clubTorneo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"

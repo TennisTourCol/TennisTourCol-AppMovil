@@ -31,13 +31,13 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
 
-        name=findViewById(R.id.namePerfil);
+        name=findViewById(R.id.namePerfil2);
         imgPerfil = findViewById(R.id.imagenPerfil);
-        description = findViewById(R.id.descriptionPerfil);
-        ciudad = findViewById(R.id.cityPlayer);
-        apodo = findViewById(R.id.apodoPlayer);
-        puntos = findViewById(R.id.puntosPlayer);
-        liga=findViewById(R.id.ligaPlayer);
+        description = findViewById(R.id.descriptionPerfil2);
+        ciudad = findViewById(R.id.cityPlayer2);
+        apodo = findViewById(R.id.apodoPlayer2);
+        puntos = findViewById(R.id.puntosPlayer2);
+        liga=findViewById(R.id.ligaPlayer2);
 
         name.setText(jugadorPrueba.getName());
         imgPerfil.setImageResource(jugadorPrueba.getImagen());
