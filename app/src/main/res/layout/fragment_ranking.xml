@@ -27,41 +27,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="Pos"
+                    android:text="Pos     18 Sencillos     Liga     Ciudad     Ptos"
                     android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    android:textColor="@color/blackcolor_200"
-                    android:visibility="visible"
-                    tools:text="18 Sencillos" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Liga" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ciudad" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ptos" />
 
             </TableRow>
 
@@ -70,39 +41,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="1     Juan Villamil     Bta     Bogotá     6000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Muñoz" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="5550" />
 
             </TableRow>
 
@@ -111,39 +54,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="2"
+                    android:text="2     Cesar Villamil     Bta     Bogotá     5000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="4550" />
 
             </TableRow>
 
@@ -152,39 +67,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="3     David Herrera     Bta     Bogotá     4000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="3000" />
 
             </TableRow>
 
@@ -193,39 +80,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="4"
+                    android:text="4     Juan Herrera     Bta     Bogotá     3000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="David Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2999" />
 
             </TableRow>
 
@@ -234,80 +93,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="5"
+                    android:text="5     Juan Muñoz     Bta     Bogotá     2000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Santiago Alonso" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2750" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:text="6"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cesar Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2000" />
 
             </TableRow>
 
@@ -328,39 +118,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="Pos"
+                    android:text="Pos     14 Sencillos     Liga     Ciudad     Ptos"
+
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="14  Sencillos" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Liga" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ciudad" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ptos" />
 
             </TableRow>
 
@@ -369,39 +132,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="1     Juan Villamil     Bta     Bogotá     6000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Muñoz" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="5550" />
 
             </TableRow>
 
@@ -410,39 +145,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="2"
+                    android:text="2     Cesar Villamil     Bta     Bogotá     5000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="4550" />
 
             </TableRow>
 
@@ -451,39 +158,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="3     David Herrera     Bta     Bogotá     4000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="3000" />
 
             </TableRow>
 
@@ -492,39 +171,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="4"
+                    android:text="4     Juan Herrera     Bta     Bogotá     3000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="David Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2999" />
 
             </TableRow>
 
@@ -533,82 +184,14 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="5"
+                    android:text="5     Juan Muñoz     Bta     Bogotá     2000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Santiago Alonso" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2750" />
 
             </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:text="6"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cesar Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2000" />
-
-            </TableRow>
 
         </TableLayout>
 
@@ -627,39 +210,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="Pos"
+                    android:text="Pos     18 Dobles     Liga     Ciudad     Ptos"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="18 Dobles" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Liga" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ciudad" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ptos" />
 
             </TableRow>
 
@@ -668,39 +223,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="1     Juan Villamil     Bta     Bogotá     6000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Muñoz" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="5550" />
 
             </TableRow>
 
@@ -709,39 +236,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="2"
+                    android:text="2     Cesar Villamil     Bta     Bogotá     5000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="4550" />
 
             </TableRow>
 
@@ -750,39 +249,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="3     David Herrera     Bta     Bogotá     4000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="3000" />
 
             </TableRow>
 
@@ -791,39 +262,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="4"
+                    android:text="4     Juan Herrera     Bta     Bogotá     3000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="David Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2999" />
 
             </TableRow>
 
@@ -832,80 +275,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="5"
+                    android:text="5     Juan Muñoz     Bta     Bogotá     2000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Santiago Alonso" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2750" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:text="6"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cesar Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2000" />
 
             </TableRow>
 
@@ -926,39 +300,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="Pos"
+                    android:text="Pos     16 Sencillos     Liga     Ciudad     Ptos"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="16 Sencillos" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Liga" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ciudad" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ptos" />
 
             </TableRow>
 
@@ -967,39 +313,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="1     Juan Villamil     Bta     Bogotá     6000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Muñoz" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="5550" />
 
             </TableRow>
 
@@ -1008,39 +326,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="2"
+                    android:text="2     Cesar Villamil     Bta     Bogotá     5000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="4550" />
 
             </TableRow>
 
@@ -1049,39 +339,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="3     David Herrera     Bta     Bogotá     4000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="3000" />
 
             </TableRow>
 
@@ -1090,39 +352,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="4"
+                    android:text="4     Juan Herrera     Bta     Bogotá     3000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="David Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2999" />
 
             </TableRow>
 
@@ -1131,80 +365,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="5"
+                    android:text="5     Juan Muñoz     Bta     Bogotá     2000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Santiago Alonso" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2750" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:text="6"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cesar Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2000" />
 
             </TableRow>
 
@@ -1225,39 +390,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="Pos"
+                    android:text="Pos     16 Dobles     Liga     Ciudad     Ptos"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="16 Dobles" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Liga" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ciudad" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Ptos" />
 
             </TableRow>
 
@@ -1266,39 +403,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="1"
+                    android:text="1     Juan Villamil     Bta     Bogotá     6000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Muñoz" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="5550" />
 
             </TableRow>
 
@@ -1307,39 +416,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="2"
+                    android:text="2     Cesar Villamil     Bta     Bogotá     5000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="4550" />
 
             </TableRow>
 
@@ -1348,39 +429,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="3"
+                    android:text="3     David Herrera     Bta     Bogotá     4000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Juan Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="3000" />
 
             </TableRow>
 
@@ -1389,39 +442,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="4"
+                    android:text="4     Juan Herrera     Bta     Bogotá     3000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="David Herrera" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cundi" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Chia" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2999" />
 
             </TableRow>
 
@@ -1430,80 +455,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="30dp"
+                    android:layout_width="304dp"
                     android:layout_height="30dp"
                     android:gravity="center_horizontal"
-                    android:text="5"
+                    android:text="5     Juan Muñoz     Bta     Bogotá     2000"
                     android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Santiago Alonso" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2750" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:text="6"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Cesar Villamil" />
-
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bta" />
-
-                <TextView
-                    android:layout_width="61dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="Bogotá" />
-
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="30dp"
-                    android:gravity="center_horizontal"
-                    android:textAlignment="center"
-                    tools:text="2000" />
 
             </TableRow>
 
