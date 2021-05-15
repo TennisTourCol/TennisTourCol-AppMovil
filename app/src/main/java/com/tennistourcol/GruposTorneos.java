@@ -42,6 +42,7 @@ public class GruposTorneos extends AppCompatActivity {
         listaCategorias.add("SemiFinales");
         listaCategorias.add("Finales");
 
+
         listOctavos.add("La roca");
         listOctavos.add("Toreto");
         listOctavos.add("Daniel");
@@ -71,5 +72,8 @@ public class GruposTorneos extends AppCompatActivity {
 
         adaptadorGruposTorneos = new AdaptadorGruposTorneos(this, listaCategorias, cuadrosChild);
         expandableListView.setAdapter(adaptadorGruposTorneos);
+
+
+
     }
 }

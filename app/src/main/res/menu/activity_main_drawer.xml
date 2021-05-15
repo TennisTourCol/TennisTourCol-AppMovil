@@ -44,6 +44,12 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Editar Información" />
 
+        <item
+            android:id="@+id/tournamentActivityFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mis torneos" />
+
+
     </group>
 </menu>
 

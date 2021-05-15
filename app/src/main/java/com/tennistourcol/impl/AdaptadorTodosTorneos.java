@@ -1,10 +1,12 @@
 package com.tennistourcol.impl;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +18,7 @@ import java.util.ArrayList;
 public class AdaptadorTodosTorneos extends BaseAdapter {
     private Context context;
     private ArrayList<Tournament> torneos;
+    private Button boton;
 
     public AdaptadorTodosTorneos(Context context, ArrayList<Tournament> torneos) {
         this.context = context;
@@ -46,6 +49,7 @@ public class AdaptadorTodosTorneos extends BaseAdapter {
         TextView nombreTorneo = convertView.findViewById(R.id.nombreTorneo);
         TextView club = convertView.findViewById(R.id.club);
         TextView fecha = convertView.findViewById(R.id.direccion);
+
 
         clubImg.setImageResource(tournament.getFoto());
         nombreTorneo.setText(tournament.getNombre());
