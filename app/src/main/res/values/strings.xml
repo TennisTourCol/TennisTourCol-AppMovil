@@ -10,6 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_todos_torneos">Todos los torneos</string>
     <string name="menu_create_tournament">Crear Torneo</string>
     <string name="menu_match">Modificar Cuadros</string>
 

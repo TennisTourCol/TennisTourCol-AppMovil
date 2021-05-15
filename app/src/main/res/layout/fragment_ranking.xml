@@ -314,7 +314,7 @@
         </TableLayout>
 
         <TableLayout
-            android:id="@+id/sencillos18"
+            android:id="@+id/sencillos14"
             android:layout_width="304dp"
             android:layout_height="224dp"
             android:layout_marginTop="1088dp"

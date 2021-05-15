@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Estadisticas" />
         <item
+            android:id="@+id/allTournamentFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_todos_torneos" />
+        <item
             android:id="@+id/tournamentActivityFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Mis torneos" />
@@ -29,6 +33,7 @@
         android:id="@+id/editTorunamentFragment"
         android:icon="@drawable/ic_menu_slideshow"
         android:title="Modificar Torneo" />
+
         <item
             android:id="@+id/matchFragment"
             android:icon="@drawable/ic_menu_slideshow"

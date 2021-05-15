@@ -59,6 +59,10 @@
         android:label="Editar Perfil"
         tools:layout="@layout/fragment_edit_info" />
 
+    <fragment
+        android:id="@+id/allTournamentFragment"
+        android:name="com.tennistourcol.ui.tournament.AllTournamentFragment"
+        android:label="AllTournamentFragment" />
 
 
 </navigation>
