@@ -86,6 +86,33 @@ public class EditTorunamentFragment extends Fragment {
             }
         });
 
+        /*
+        confirmarboton = (Button) view.findViewById(R.id.button);
+        confirmarboton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String message = "Confirmacion de Edicion Torneo";
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                        container.getContext()
+                )
+                        .setSmallIcon(R.drawable.ic_message)
+                        .setContentTitle("Nueva Notifiacion")
+                        .setContentText(message)
+                        .setAutoCancel(true);
+                Intent intent = new Intent(container.getContext(), NotifiactionActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("message",message);
+
+                PendingIntent pendingIntent = PendingIntent.getActivities(container.getContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+
+                NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(0,builder.build());
+            }
+
+        });
+         */
+
         return view;
     }
 
