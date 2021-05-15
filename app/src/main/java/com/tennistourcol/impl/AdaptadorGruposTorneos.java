@@ -1,15 +1,18 @@
 package com.tennistourcol.impl;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tennistourcol.R;
+import com.tennistourcol.ReportarMarcadorActivity;
 import com.tennistourcol.model.Tournament;
 
 import java.util.ArrayList;
@@ -76,6 +79,15 @@ public class AdaptadorGruposTorneos extends BaseExpandableListAdapter {
         String item = (String) getChild(i, i1);
         view = LayoutInflater.from(context).inflate(R.layout.cuadros_child, null);
         TextView tvChild = (TextView) view.findViewById(R.id.textView11);
+
+        Button boton = view.findViewById(R.id.reportarMaracdorChill);
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ReportarMarcadorActivity.class);
+                context.startActivity(intent);
+            }
+        });
         tvChild.setText(item);
         return view;
     }
